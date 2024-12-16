@@ -14,7 +14,7 @@ func greet(w http.ResponseWriter, r *http.Request) {
 func main() {
 	// http.HandleFunc("/", greet)
 	// http.ListenAndServe(":8080", nil)
-	var one, two, three, four, five int := 1, 2, 3, 4, 5
+	var one, two, three, four, five int = 1, 2, 3, 4, 5
 	fmt.Println(one)
 	fmt.Println(two)
 	fmt.Println(three)
