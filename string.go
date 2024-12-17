@@ -10,5 +10,5 @@ func main() {
 	msg2 := "s"
 
 	fmt.Println(strings.Compare(msg, msg2))
-	fmt.Println(len)
+	fmt.Println(len(msg))
 }
