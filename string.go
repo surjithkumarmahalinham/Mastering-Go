@@ -16,5 +16,8 @@ func main() {
 	lower := "msksurjith"
 	fmt.Println(strings.ToUpper(lower))
 
+	upper := "MSKSURJITH"
+	fmt.Println(strings.ToLower(upper))
+
 	fmt.Println(len(msg))
 }
