@@ -8,11 +8,13 @@ import (
 func main() {
 	msg := "one"
 	msg2 := "s"
+	fmt.Println(strings.Compare(msg, msg2))
 
 	contain := "golang programming language"
 	fmt.Println(strings.Contains(contain, "golang"))
 
-	fmt.Println(strings.Compare(msg, msg2))
+	lower := "msksurjith"
+	fmt.Println(strings.ToUpper(lower))
 
 	fmt.Println(len(msg))
 }
