@@ -26,4 +26,17 @@ func main() {
 	num = append(num, 30, 40, 50)
 	fmt.Println(num)
 	fmt.Println(numbers)
+
+	// make
+
+	num1 := make([]int, 5, 20)
+
+	num1[0] = 10
+	num1[1] = 20
+	num1[2] = 30
+	num1[3] = 40
+
+	fmt.Println(num1)
+	fmt.Println(len(num1))
+	fmt.Println(cap(num1))
 }
