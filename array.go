@@ -18,5 +18,12 @@ func main() {
 		fmt.Println(item, peoples[item])
 	}
 
+	// slice
+
+	num := []int{10, 20}
+
+	fmt.Println(num)
+	num = append(num, 30, 40, 50)
+	fmt.Println(num)
 	fmt.Println(numbers)
 }
