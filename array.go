@@ -39,4 +39,14 @@ func main() {
 	fmt.Println(num1)
 	fmt.Println(len(num1))
 	fmt.Println(cap(num1))
+
+	userData := map[string]int{
+		"msk": 100,
+		"vky": 100,
+		"dva": 100,
+	}
+
+	for prop, value := range userData {
+		fmt.Println(prop, value)
+	}
 }
