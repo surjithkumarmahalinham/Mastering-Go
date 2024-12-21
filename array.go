@@ -34,6 +34,7 @@ func main() {
 	num1[0] = 10
 	num1[1] = 20
 	num1[2] = 30
+	num1[3] = 40
 
 	fmt.Println(num1)
 	fmt.Println(len(num1))
