@@ -5,6 +5,11 @@ import "fmt"
 // we are store and print multiple number of data
 func main() {
 	showvalue("asfd", "adfd", "dssd")
+
+	add := func(num1 int, num2 int) int {
+		return num1 + num2
+	}
+	fmt.Println(add(10, 30))
 }
 
 func showvalue(s ...string) {
