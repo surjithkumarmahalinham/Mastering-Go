@@ -36,6 +36,11 @@ func (a User2) Username() string {
 	return "Xyz"
 }
 
+// User Information
+func PrintInfo(h Human) {
+	log.Println("My name is a ", h.Username(), " and My Profession is ", h.Profession())
+}
+
 func main() {
 	// Instance of struct
 	John := User1{
@@ -43,13 +48,11 @@ func main() {
 		Gender: "Male",
 	}
 
+	PrintInfo(John)
+
 	Lara := User2{
 		Age:    28,
 		Gender: "Female",
 	}
-}
-
-// User Information
-func PrintInfo(h Human) {
-	log.Println("My name is a ", h.Username(), " and My Profession is ", h.Profession())
+	PrintInfo(Lara)
 }
