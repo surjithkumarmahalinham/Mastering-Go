@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 // Define interface
 type Human interface {
 	Username() string
@@ -19,9 +21,35 @@ type User2 struct {
 
 // Define Methods
 func (j User1) Profession() string {
+	return "Front-end Developer"
+}
 
+func (j User1) Username() string {
+	return "Abc"
+}
+
+func (a User2) Profession() string {
+	return "Backend Developer"
+}
+
+func (a User2) Username() string {
+	return "Xyz"
 }
 
 func main() {
+	// Instance of struct
+	John := User1{
+		Age:    27,
+		Gender: "Male",
+	}
 
+	Lara := User2{
+		Age:    28,
+		Gender: "Female",
+	}
+}
+
+// User Information
+func PrintInfo(h Human) {
+	log.Println("My name is a ", h.Username(), " and My Profession is ", h.Profession())
 }
