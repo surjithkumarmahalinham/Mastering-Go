@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 type Animal interface {
+	GetInfo() string
 }
 
 type Cat struct {
