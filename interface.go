@@ -12,7 +12,7 @@ type Cat struct {
 }
 
 func (c Cat) GetInfo() string {
-	return fmt.Sprintf("Cat:%s, Color:%s", c.Name, c.Color)
+
 }
 
 type Dog struct {
