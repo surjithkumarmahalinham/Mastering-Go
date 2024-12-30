@@ -33,7 +33,7 @@ func (a User2) Profession() string {
 }
 
 func (a User2) Username() string {
-	return "Xyz"
+
 }
 
 // User Information
