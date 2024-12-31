@@ -6,6 +6,11 @@ type Animal interface {
 	GetInfo() string
 }
 
+type Cat struct {
+	Name  string
+	Color string
+}
+
 func (c Cat) GetInfo() string {
 	return fmt.Sprintf("Cat:%s, Color:%s", c.Name, c.Color)
 }
