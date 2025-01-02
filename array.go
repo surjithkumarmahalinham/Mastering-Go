@@ -41,7 +41,7 @@ func main() {
 	fmt.Println(cap(num1))
 
 	userData := map[string]int{
-		"msk": 100,
+
 		"vky": 100,
 		"dva": 100,
 	}
