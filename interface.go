@@ -11,6 +11,10 @@ type Cat struct {
 	Color string
 }
 
+func (c Cat) GetInfo() string {
+	return fmt.Sprintf("Cat:%s, Color:%s", c.Name, c.Color)
+}
+
 type Dog struct {
 	Name  string
 	Breed string
