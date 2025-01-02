@@ -1,7 +1,5 @@
 package main
 
-import "log"
-
 // Define interface
 type Human interface {
 	Username() string
@@ -37,9 +35,6 @@ func (a User2) Username() string {
 }
 
 // User Information
-func PrintInfo(h Human) {
-	log.Println("My name is a ", h.Username(), " and My Profession is ", h.Profession())
-}
 
 func main() {
 	// Instance of struct
