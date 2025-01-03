@@ -8,7 +8,6 @@ func main() {
 	func() {
 		fmt.Println("Annonymous Function")
 	}()
-	showvalue("asfd", "adfd", "dssd")
 
 	add := func(num1 int, num2 int) int {
 		return num1 + num2
