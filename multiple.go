@@ -13,7 +13,7 @@ func main() {
 	add := func(num1 int, num2 int) int {
 		return num1 + num2
 	}
-
+	fmt.Println(add(10, 30))
 }
 
 func showvalue(s ...string) {
