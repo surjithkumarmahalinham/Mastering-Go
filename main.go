@@ -7,7 +7,7 @@ import (
 )
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
-
+	if(r.URL.Path !=)
 }
 func main() {
 	fileServer := http.FileServer(http.Dir("./static"))
