@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func formHandler(w http.ResponseWriter, r *http.Request) {
+func formValidate(w http.ResponseWriter, r *http.Request) {
 	if err := r.ParseForm(); err != nil {
 		fmt.Println(w, "Parseform errror: %v", err)
 	}
@@ -33,8 +33,8 @@ func main() {
 	fileServer := http.FileServer(http.Dir("./static"))
 
 	http.Handle("/", fileServer)
-	http.Handle("/form", formHandler)
-	http.Handle("/hello", formHandler)
+	http.Handle("/form", http.HandlerFunc(formValidate))
+	http.Handle("/hello", http.HandlerFunc(formValidate))
 
 	fmt.Println("Starting server at port 8008")
 
