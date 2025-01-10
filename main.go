@@ -15,7 +15,6 @@ func formValidate(w http.ResponseWriter, r *http.Request) {
 	lname := r.FormValue("lname")
 
 	fmt.Println(w, "FName = %s", fname)
-	fmt.Println(w, "LName = %s", lname)
 
 }
 func helloHandler(w http.ResponseWriter, r *http.Request) {
