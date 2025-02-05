@@ -14,9 +14,6 @@ func formValidate(w http.ResponseWriter, r *http.Request) {
 	fname := r.FormValue("fname")
 	lname := r.FormValue("lname")
 
-	fmt.Println(w, "FName = %s", fname)
-	fmt.Println(w, "LName = %s", lname)
-
 }
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/hello" {
