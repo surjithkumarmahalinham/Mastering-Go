@@ -23,7 +23,10 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "404 not found", http.StatusNotFound)
 		return
 	}
-
+	if r.Method != "GET" {
+		http.Error(w, "method not support", http.StatusNotFound)
+		return
+	}
 	fmt.Println(w, "hello!")
 }
 func main() {
